@@ -17,7 +17,7 @@ class Database_skills(db.Model):
         return str(self.id) + self.skills
 
 
-@app.route("file:///C:/Users/Lenovo/Desktop/SIH/SIH/index", methods=["GET", "POST"])
+@app.route("/index", methods=["GET", "POST"])
 def database():
     if request.method == "POST":
         db_skills = request.form['skillsearch']
@@ -26,7 +26,7 @@ def database():
         database = Database_skills(skills=db_skills, intrests=db_intrests, parents=db_parents)
         db.session.add(database)
         db.session.commit()
-        return redirect('file:///C:/Users/Lenovo/Desktop/SIH/SIH/index')
+        return redirect('/output')
     else:
         posts = Database_skills.query.all()
         return render_template('output.html', posts=posts)
