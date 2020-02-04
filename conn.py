@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-
+import main
 app = Flask(__name__)
 
 
@@ -13,10 +13,11 @@ def student():
 def result():
     if request.method == 'POST':
         db_skills = request.form['skillsearch']
-        db_intrests = request.form['intrest']
-        db_parents = request.form['parentrecommendation']
-        posts = [db_skills, db_intrests, db_parents]
-        return render_template("output.html", post=posts)
+        # db_intrests = request.form['intrest']
+        # db_parents = request.form['parentrecommendation']
+        posts = db_skills
+        yo = main.bitch(posts)
+        return render_template("output.html", post=yo)
 
 
 if __name__ == '__main__':
