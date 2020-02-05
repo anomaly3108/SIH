@@ -11,7 +11,7 @@ def aviral(number):
         for i, row in enumerate(reader):
             if i in number:
                 jobs.append(row[1])
-    return jobs
+    return jobs[:5]
 
 
 def skills():
