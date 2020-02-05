@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="output_skills">
-    <h2> Jobs Based on Your Skills :- </h2>
+    <h2> Jobs Based on Your Skills as {{ in_skills }} </h2>
         <ul>
         {% for job in post %}
             <li><p>{{ job }}</p></li>
@@ -15,7 +15,7 @@
         </ul>
 </div>
 <div class="output_intrests">
-        <h2> Jobs Based on Your Intrests :- </h2>
+        <h2> Jobs Based on Your Intrests as {{ in_intrest }} </h2>
         <ul>
         {% for job in out_intrest %}
             <li><p>{{ job }}</p></li>
@@ -23,7 +23,7 @@
         </ul>
 </div>
 <div class="output_parents">
-            <h2> Jobs Based on Your Parents Recommendation :- </h2>
+            <h2> Jobs Based on Your Parents Recommendation as {{ in_parent }} </h2>
         <ul>
         {% for job in out_parents %}
             <li><p>{{ job }}</p></li>

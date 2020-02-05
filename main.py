@@ -8,8 +8,6 @@ def jobs(posts):
     jobs = library.aviral(number)
     return jobs
 
-<<<<<<< HEAD
-=======
 def from_intrests(intrests):
     skillist = library.skills()
     user_intrests = intrests.split(',')
@@ -24,8 +22,6 @@ def from_parents(parents):
     jobs_basedon_parents = library.aviral(number)
     return jobs_basedon_parents
 
-
->>>>>>> 6079f980d124966bf88341ab461689bbb9e53282
 '''
 if len(jobs)==0:
     print('no job found')

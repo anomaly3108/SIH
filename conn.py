@@ -21,7 +21,7 @@ def result():
         jobs = main.jobs(db_skills)
         intrests = main.from_intrests(db_intrests)
         parents = main.from_parents(db_parents)
-        return render_template("output.html", post=jobs, out_intrest=intrests, out_parents=parents)
+        return render_template("output.html", post=jobs, out_intrest=intrests, out_parents=parents,in_skills=db_skills,in_intrest=db_intrests,in_parent=db_parents)
 
 
 if __name__ == '__main__':
