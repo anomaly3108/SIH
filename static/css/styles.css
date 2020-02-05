@@ -403,4 +403,31 @@ body {
 .popup .form--input {
   padding-bottom: 2rem;
 }
+
+.output_skills{
+    background-color:  green;
+    font-size: 30px;
+    margin: 2px;
+    mix-blend-mode: screen;
+    padding: 5px;
+    text-align: center;
+}
+
+.output_intrests{
+    background-color:  green;
+    font-size: 30px;
+    margin: 2px;
+    mix-blend-mode: screen;
+    padding: 5px;
+    text-align: center;
+}
+
+.output_parents{
+    background-color:  green;
+    font-size: 30px;
+    margin: 2px;
+    mix-blend-mode: screen;
+    padding: 5px;
+    text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */
